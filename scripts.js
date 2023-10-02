@@ -74,34 +74,20 @@ for (let i = 0; i < parrafos.length; i++) {
             parrafos[i].style.backgroundColor = defaultBckCol;
             parrafos[i].style.color = defautColor;
         })
-    })
-    
-    function cambiarColor() {
-        
-    }
+    })  
 }
 
 //cambiar color a articles y sections
-for ( i = 0; i < article.length; i++) {
-    article[i].addEventListener("mouseover", function(){
-
-        let defaultArtBck = article[i].style.backgroundColor;
+for (let i = 0; i < article.length; i++) {
+    article[i].addEventListener("mouseover", function (){
+        
+        let defaultArtCol = article[i].style.backgroundColor;
 
         article[i].style.backgroundColor = "purple";
+        
         article[i].addEventListener("mouseout", function(){
-            article[i].style.backgroundColor = defaultArtBck;
+            article[i].style.backgroundColor = defaultArtCol;
+            
         })
-    })
-}
-
-for ( i = 0; i < section.length; i++) {
-    section[i].addEventListener("mouseover", function(){
-
-        let defaultSctBck = section[i].style.backgroundColor;
-
-        section[i].style.backgroundColor = "black";
-        section[i].addEventListener("mouseout", function(){
-            section[i].style.backgroundColor = defaultSctBck;
-        })
-    })
+    })  
 }
