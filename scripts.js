@@ -49,16 +49,18 @@ for (let i = 0; i < section.length; i++) {
 
 
 //al pasar el raton por un elemento...
+//cambiar la imagen y devolverla al original al salir
 
-//cambiar la imagen
 for (let i = 0; i < images.length; i++) {
+    let defaultSrc = images[i].src;
+
     images[i].addEventListener("mouseover", function(){
-        let defaultSrc = images[i].src;
         images[i].src = "./assets/abracadabra.gif"
-        images[i].addEventListener("mouseout", function(){
-            images[i].src = defaultSrc;
-        })
     });
+
+    images[i].addEventListener("mouseout", function(){
+        images[i].src = defaultSrc;
+    })
 }
 
 
